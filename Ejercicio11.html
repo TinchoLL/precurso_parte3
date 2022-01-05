@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correcta;
+        correcta = 5;
+
+        let max_intentos;
+        max_intentos = 3;
+
+        let intento;
+        intento = 1;
+
+        let respuesta;
+
+        while (intento <= max_intentos)
+        {
+            respuesta = parseInt(prompt("Adivina el número entre 1 y 10"));
+            if (respuesta == correcta)
+            {
+                console.log("Has adivinado el número en el intento " + intento);
+                break;
+            } else
+            {
+                console.log("Número incorrecto");
+            }
+            intento = intento + 1;
+        }
+        
+    </script> 
+</body>
+</html>

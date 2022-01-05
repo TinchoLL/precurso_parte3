@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tablero = "";
+        let tablero2 = "";
+        let filas=parseInt(prompt("Cuantas filas y columnas?"));
+            for (let a = 1; a <= filas; a = a + 1) 
+            {
+                if (a % 2 == 0)
+                    {   
+                    tablero += "X";
+                    }       
+                
+                else
+                    {
+                    tablero += "O";
+                    }
+            }
+                    
+            console.log(tablero);
+
+            for (let b = 1; b <= filas; b = b + 1) 
+            {
+                if (b % 2 != 0)
+                    {   
+                    tablero2 += "X";
+                    }       
+                
+                else
+                    {
+                    tablero2 += "O";
+                    }
+            }
+                    
+            console.log(tablero2);
+            
+</script>
+</body>
+</html>
